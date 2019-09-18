@@ -1,0 +1,17 @@
+ tar -xvzf bigfile.tar.gz -C /folder/subfolder/
+tar -xz -f Music.tar.gz “./new/one.mp3”
+tar -xv -f Music.tar.gz “./new/two.mp3” “./new/three.mp3”
+
+tar -xv -f Music.tar.gz –wildcards “*.mp3”
+tar -tz -f abc.tar.gz
+ tar -tvz -f Music.tar.gz | grep two.mp3
+ tar -cvf Videos.tar ./Latest/
+ tar -cvzf Videos.tar ./Latest/
+tar -czw -f hugefie.tar.gz ./Videos/*
+tar -t -f hugefie.tar.gz
+
+    # gunzip Institution.tar.gz
+
+    # tar -rf Institution.tar ./College/Engineering/top.ppt
+
+    # gzip Institution.tar
