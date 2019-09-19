@@ -55,7 +55,7 @@ body {
 
 .form-wrapper {
 width:300px;
-height:370px;
+height:auto;
   position: absolute;
   top: 50%;
   left: 48%;
@@ -66,25 +66,35 @@ height:370px;
   box-shadow: 0px 1px 0px rgba(0,0,0,0.6),inset 0px 1px 0px rgba(255,255,255,0.04);
 }
 .form-wrapper2 {
-  width:20%;
-  height:50px;
+  width:300px;
+  height:auto;
     position: absolute;
-    top: 20%;
-left:40%;
-  
+    top: 30%;
+    left: 48%;
+    margin: -184px 0px 0px -155px;
     background: rgba(0,0,0,0.27);
+    padding: 15px 25px;
     border-radius: 5px;
-   
+    box-shadow: 0px 1px 0px rgba(0,0,0,0.6),inset 0px 1px 0px rgba(255,255,255,0.04);
   }
+.fw1{
+  width:100%;
+  height:auto;
+    position: relative;
+    margin: 0px;
+    
+    padding:0px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 0px rgba(0,0,0,0.6),inset 0px 1px 0px rgba(255,255,255,0.04);
   
 
+}
 .form-wrapper1 {
+  background: rgba(6, 8, 97, 0.27);
 width:20%;
-height:50px;
-  position: absolute;
-  top: 10%;
-  left:40%;
-color: #136680;
+height:60px;
+color: #f5f7f8;
+box-shadow: 0px 1px 0px rgba(0,0,0,0.6),inset 0px 1px 0px rgba(255,255,255,0.04);
 border-radius: 5px;
 
 }

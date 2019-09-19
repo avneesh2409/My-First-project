@@ -12,9 +12,9 @@ constructor(){
 //    email:'',
 //    token:''
 //  }
-  this.responseFacebook=this.responseFacebook.bind(this);
+ this.responseFacebook=this.responseFacebook.bind(this);
 }
-responseFacebook = (response) => {
+responseFacebook=(response)=>{
   if(response){
     console.log(response);
     let payload={
@@ -48,7 +48,7 @@ render(){
  return ( <FacebookLogin
     appId="422443185136180"
     onFailure={this.responseFacebook}
-    autoLoad={true}
+    autoLoad={false}
     cookie={true}
     fields="name,email,picture"
     callback={this.responseFacebook}

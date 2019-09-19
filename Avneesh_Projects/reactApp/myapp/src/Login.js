@@ -1,76 +1,60 @@
 import React,{Component,Fragment} from "react";
-//import App from './App.css';
 import Facebook from './Facebook';
 import Google from './Google';
 import './App.css';
-import axios from 'axios';
+
+
 class Login extends Component{
-  constructor(){
-    super();
-    this.state={
-      name:"",
-      password:"",
-      email:""
-    }
- //   this.handleSubmit=this.handleSubmit.bind(this);
+constructor(props){
+  super(props);
+  this.state={
+    username:'',
+    password:''
   }
- 
-  
-  
-  // componentWillMount() {
-  //   this.getData()
-  // }
+this.submithandler=this.submithandler.bind(this);
+//this.onchange=this.onchange.bind(this);
 
-  // getData() {
-  //   // // create a new XMLHttpRequest
-  //   // var xhr = new XMLHttpRequest()
+}
+submithandler(opt){
+  console.log(opt);
+}
+componentDidMount(){
+console.log("component will mount");
 
-  //   // // get a callback when the server responds
-  //   // xhr.addEventListener('load', () => {
-     
-  //   //   console.log(xhr.responseText)
-  //   // })
-  //   // // open the request with the verb and the url
-  //   // xhr.open('GET', 'ihttp://localhost:56702/ap')
-  //   // // send the request
-  //   // xhr.send()
+}
+  render(){
+  return(
     
-  // }
-
-render(){
-return (
-<Fragment>
-<Google />	
-<Facebook />
-
+    <Fragment>
+      <div class="container text-center">
+<Facebook /><hr />
+<Google />
+</div>
 <div class="form-wrapper">
-  <form action="" method="post">
-    <h3>Login here</h3>
+  <form onSubmit={this.submithandler}>
+      <h1 className="fw1 text-center">Login here</h1>
 
-    <div class="form-item">
-                <input type="text" name="username" required="required" placeholder="Username" autofocus required></input>
+      <div class="form-item">
+                <input type="text" value={this.state.username} placeholder="username" required /> 
     </div>
     
     <div class="form-item">
-                <input type="password" name="password" required="required" placeholder="Password" required></input>
+                <input type="password" value={this.state.password} placeholder="password" required/> 
     </div>
     
     <div class="button-panel">
-                <input type="submit" class="button" title="Log In" name="login" value="Login"></input>
+                <input type="submit" class="button" value="Log In" /> 
     </div>
-  </form>
+
+</form>
+ 
   <div class="reminder">
-    <p>Not a member? <a href="register.php">Sign up now</a></p>
-    <p><a href="dummy.php">Forgot password?</a></p>
+      <p>Not a member? <a href="/register">Sign up now</a></p>
+      <p><a href="dummy.php">Forgot password?</a></p>
   </div>
-  
-</div>
-
+</div>  
 </Fragment>
-
 );
-
 }
-
 }
 export default Login;
