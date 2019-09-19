@@ -1,0 +1,4 @@
+/home/sushma/Desktop/Git_Repository/Avneesh_Projects/5-minute-fridays-master/MyWebApi/obj/Debug/netcoreapp2.0/MyWebApi.csprojAssemblyReference.cache
+/home/sushma/Desktop/Git_Repository/Avneesh_Projects/5-minute-fridays-master/MyWebApi/obj/Debug/netcoreapp2.0/MyWebApi.csproj.CoreCompileInputs.cache
+/home/sushma/Desktop/Git_Repository/Avneesh_Projects/5-minute-fridays-master/MyWebApi/obj/Debug/netcoreapp2.0/MyWebApi.AssemblyInfoInputs.cache
+/home/sushma/Desktop/Git_Repository/Avneesh_Projects/5-minute-fridays-master/MyWebApi/obj/Debug/netcoreapp2.0/MyWebApi.AssemblyInfo.cs
